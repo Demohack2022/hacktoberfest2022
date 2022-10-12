@@ -9,7 +9,16 @@ def factorial(n):
             fact *= n
             n -= 1
         return fact
+
+
+def factIter(n):
+    if n == 0:
+        return 1;
+    
+    facto = 1;
+    for i in range (1, n+1):
+        facto *= i
+    return facto;
  
 num = 5;
-print("Factorial of",num,"is",
-factorial(num))
+print("Factorial of ",num," is",factIter(num))
