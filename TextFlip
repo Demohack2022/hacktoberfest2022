@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>TextFlip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="loading">
+   <span style="--letter:1">G</span>
+   <span style="--letter:2">a</span>
+   <span style="--letter:3">u</span>
+   <span style="--letter:4">r</span>
+   <span style="--letter:5">i</span>
+   <span style="--letter:6">G</span>
+   <span style="--letter:7">h</span>
+   <span style="--letter:8">a</span>
+   <span style="--letter:9">d</span>
+   <span style="--letter:10">g</span>
+   <span style="--letter:11">e</span>
+  </div>
+   </div>
+</body>
+</html>
+
+-----------------------------------------------------------------------------------CSS----------------------------------------------------------------------------------
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .loading {
+    position: relative;
+  }
+  .loading span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: rgb(209, 14, 128);
+    animation: flip 3s infinite;
+    animation-delay: calc(.3s * var(--letter))
+  }
+  
+@keyframes flip {
+    0%,70% {
+      transform: rotateY(360deg) 
+    }
+    
