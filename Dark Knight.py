@@ -9,3 +9,4 @@ for x in range(4*s,7*s):F(x,-3*math.sqrt(s**2-(x/7)**2))
 for x in range(7*s,3*s,-1):F(x,3*math.sqrt(s**2-(x/7)**2))
 for x in range(3*s,s,-1):F(x,4.21052*s-x/2-1.3*math.sqrt(4*s*s-(x-s)**2))
 F(s+1,3*s),F(s/2,2.2*s),F(-1,2.2*s),a.end_fill(),b.end_fill(),F(0,0),turtle.exitonclick()
+#nice work
