@@ -1,5 +1,6 @@
 
 #include<stdio.h>
+main
   int main()
   {
       float principalamount, rate, simpleinterest;
@@ -9,6 +10,17 @@
        printf("Enter interest rate in percentage: ");
       scanf("%f", &rate);
        printf("Enter time period in years: ");
+
+  void main()
+  {
+      float principalamount, rate, simpleinterest;
+      int timepr;
+      printf("Enter the value of principal amount:\n");
+      scanf("%f", &principalamount);
+       printf("Enter the value of rate:\n");
+      scanf("%f", &rate);
+       printf("Enter the value of time period:\n");
+main
       scanf("%d", &timepr);
       printf("****************************************************************************");
       simpleinterest = (principalamount*rate*timepr)/100.0;
