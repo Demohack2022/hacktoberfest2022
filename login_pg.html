@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset= "UTF-8">
+     <meta http-equive="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Gauri Ghadge</title>
+     <link rel="stylesheet" href= "style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="screencontent">
+                <form class="login">
+                    <div class="loginfield">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="logininput" placeholder="Enter Username">
+                    </div>
+                    <div class="loginfield">
+                        <i class="fa fa-envelope"></i>
+                        <input type="text" class="logininput" placeholder="Enter E-mail">
+                    </div>
+                    <div class="login_field">
+                        <i class="fa fa-key"></i>
+                        <input type="password" class="logininput" placeholder=" Enter Password">
+                    </div>
+                    
+                    <button class="button loginsubmit">
+                        <span class="buttontext">Login</span>
+                        <i class="buttonicon fas fa-chevron-right"></i>
+                    </button>	
+                    <br><br>
+                       <div class="social-media">
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a> 
+                    </div>
+                    <p><center>Login with social media</center></p>	
+                </form>
+               </div>
+                </div>
+            </div>
+            	
+        </div>
+    </div>
+</body>
+</html>
+
+
+---------------------------------------------------------------------------CSS----------------------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+}
+
+body {
+	background-color: transparent;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.screen {		
+	background:#f1abd2;		
+	position: relative;	
+	height: 500px;
+	width: 350px;	
+	box-shadow: 0px 0px 24px #5C5696;
+}
+
+.screencontent {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+
+.screenbackground {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 100px;
+}
+
+.loginfield {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.loginicon {
+	position: absolute;
+	top: 30px;
+}
+
+.logininput {
+	border: none;
+	border-bottom: 2px solid #00000c;
+	background: none;
+	padding: 10px;
+	padding-left: 10px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+
+.logininput:active,
+.logininput:focus,
+.logininput:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.loginsubmit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: chocolate;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.loginsubmit:active,
+.loginsubmit:focus,
+.loginsubmit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.buttonicon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+
+.social-media{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       a{
+           display: flex;
+           background-color: #ddd;
+           height: 50px;
+           width: 50px;
+           margin: 0 15px;
+           border-radius: 8px;
+           align-items: center;
+           justify-content: center;
+           border: 1px solid rgba(0,0,0,0.0);
+           
+       }
+       a i{
+           font-size: 35px;
+           color: #777;
+           
+       }
+       a:hover{
+        box-shadow: inset 4px 4px 6px  -1px rgba(0,0,0,0.2),inset -4px -4px 6px -1px rgba(255,255,255,0.7),-0.5px -0.5px 0px rgba(255,255,255,0.7),-4px -4px 6px -1px rgba(255,255,255,0.7);
+        border: 1px solid rgba(0,0,0,0.01);
+        transform: translateY(2px);
+       }
+       a:hover i{
+           transform: scale(0.90);
+       }
+       a:hover .fa-square-instagram{
+           color: deeppink;
+       }
+       a:hover .fa-linkedin{
+        color: darkblue;
+    }
+
+     a:hover .fa-twitter{
+        color: #1DA1F2;
+    }
+    a:hover .fa-github{
+        color: #000000;
+    }
+    
