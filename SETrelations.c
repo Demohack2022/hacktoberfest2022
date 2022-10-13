@@ -151,7 +151,7 @@ int main()
             else
             {
                 printf("Not Transitive!\n");
-            }
+            } 
             break;
         }
         default:{
