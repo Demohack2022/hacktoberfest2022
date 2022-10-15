@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script> 
+function ipAddressCheck(ipAddress)
+{
+   var regEx = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)
+\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+   if(ipAddress.value.match(regEx))
+     {
+      return true;
+     }
+   else
+     {
+     alert("Please enter a valid ip Address.");
+     return false;
+     }
+}    
+</script> 
+</head>
+<body>
+<div class="mail">
+<h2>JavaScript IP Address Validation</h2>
+<form name="form1" action="#"> 
+IP Address: <input type='text' name='ipAddress'/></br></br>
+<input type="submit" name="submit" value="Submit" 
+onclick="ipAddressCheck(document.form1.ipAddress)"/>
+</form>
+</div>
+</body>
+</html>

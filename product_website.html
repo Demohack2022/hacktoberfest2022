@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COFFEE</title>
+	<link rel="stylesheet" type="text/css" href="cssproj1.css">
+	<style>
+		#showcase{
+			background-image: url("bgimage.jpg");
+		}
+	</style>
+</head>
+<body>
+<div id="showcase">
+	<header>
+		<nav class="cf">
+			<ul class="cf">
+				<li>
+					<a href="#showcase">COFFEE</a>
+				</li>
+				<li>
+					<a href="#aboutus">About Us</a>
+				</li>
+				<li>
+					<a href="#packages">Packages</a>
+				</li>
+				<li>
+					<a href="#sale">Sale</a>
+				</li>
+				<li>
+					<a href="#history">History</a>
+				</li>
+				<li>
+					<a href="#contactus">Contact Us</a>
+				</li>
+			</ul>
+			<a href="#" id="openup">Coffee</a>
+		</nav>
+	</header>
+	<div class="section-main container">
+		<h1 style="color: #FFA07A;" align="center">COFFEE</h1>
+		<h2>write paragraph content which you want</h2>
+		<p class="lead hide-on-small">The drink dates back to 800 A.D. ...
+Coffee beans are technically seeds. ...
+And you can eat coffee cherries as a food. ...
+There are two main types: Arabica and Robusta. ...
+Brazil grows the most coffee in the world. ...
+Only two U.S. states produce coffee.</p>
+</div>
+</div>
+<section id="aboutus" class="section">
+	<div class="container">
+		<h2 style="color:black;">About Us</h2>
+		<h3 style="color:maroon;">Cofee Kafi Hain!</h3>
+	</div>
+</section>
+</section>
+<footer>
+	<div class="container">
+		<div class="footer-cols">
+			<ul>
+				<li>Shop</li>
+				<li>
+					<a href="Coffee products">Coffee products</a>
+				</li>
+				<li>
+					<a href="International Brands">International Brands</a>
+				</li>
+				<li>
+					<a href="About factories">About factories</a>
+				</li>
+				<li>
+					<a href="Gift cards">Gift cards</a>
+				</li>
+			</ul>
+			<ul>
+				<li>Find store</li>
+				<li>
+					<a href="store">Find a store</a>
+				</li>
+				<li>
+					<a href="Today at COFFEE">Today at COFFEE</a>
+				</li>
+				<li>
+					<a href="Offers">Offers</a>
+				</li>
+				<li>
+					<a href="Order here">Oder here</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		Copyright &copy; 2022 COFFEE
+	</div>
+</footer>
+
+</body>
+</html>
+
+
+
+-----------------------------------------------------------------------------CSS--------------------------------------------------------------------------------------
+
+body{
+	font-family: sans-serif;
+	background-color: #FABCAF;
+	color: #FFFFFF;
+}
+
+a{
+	text-decoration: none;
+     color: #187B77;
+}
+
+#showcase
+{
+	margin: 0;
+	padding: 0;
+	background-image: url('bgimage,jpg');
+	background-repeat: no-repeat center/cover;
+	width: 100%;
+	height: 100vh; /* viewport-height*/
+	position: relative;
+	overflow: hidden;
+}
+
+#showcase .container{
+	margin-top: 50vh;
+	margin-left: 25vh;
+}
+#showcase h1{
+	font-size:4rem ;/*root element font size*/
+	margin-bottom: 0;
+}
+
+nav{
+	height: s0px;
+	width: 100%;
+	background-color: skyblue;
+	position: fixed;
+	text-decoration: none;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	display: inlines;
+	float: left;
+}
+
+nav a{
+	display: inline-block;
+	width: 100px;
+    text-align: center;
+    text-decoration:none;
+    padding: 10px 0;
+}
+
+nav li:hover{
+background-color:honeydew ;	
+}
+
+.container{
+	max-width: 1180px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 3rem;
+}
+
+.lead{
+ font-size: 1.3rem;	
+ font-family: cursive;
+}
+
+footer .footer-cols{
+	display: inline-grid;
+	grid-gap: 25px;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 2rem;
+	text-align: left;
+	font-size: 20px;
+}
+
+footer .footer-cols ul{
+  list-style: none;	
+}
+
+footer .footer-cols ul li:first-child{
+   font-size: 1.2rem;
+   padding-bottom: 0.5rem;
+   border-bottom: gray solid  1px;
+   margin-bottom: 1rem;
+}
+
+footer .footer-bottom{
+	background-color: skyblue;
+	padding: 1rem;
+	text-align: center;
+}

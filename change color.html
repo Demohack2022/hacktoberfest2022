@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title> Change Color </title>
+    <style>
+        p { font-size: 40px;}
+    </style>
+</head>
+
+<body align="center">
+    <p id ="para" font-size="5"> This text will change its color when click on the button below.</p>
+
+    <button type = "button" onclick = "change_color('blue');"> BLUE </button>
+    <button type = "button" onclick = "change_color('red');"> RED </button>
+    <button type = "button" onclick = "change_color('green');"> GREEN </button>
+
+    <script>
+        function change_color(newcolor) {
+            document.getElementById("para").style.color = newcolor;
+        }
+    </script>
+</body>
+</html>    
