@@ -1,0 +1,134 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "myFirstConnection",
+            "database": "regInfo",
+            "username": "sqluser",
+            "password": "password"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "myFirstConnection",
+            "database": "regInfo",
+            "username": "sqluser",
+            "password": "password"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "firstConnection",
+            "database": "regInfo",
+            "username": "sqluser",
+            "password": "password"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "firstConnection",
+            "database": "registerInfo",
+            "username": "sqluser",
+            "password": "password"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "myFC",
+            "database": "reg",
+            "username": "sqluser",
+            "password": "password"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "myFirstConnection",
+            "database": "regInfo",
+            "username": "sqluser",
+            "password": "password"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mfc",
+            "database": "rginfo",
+            "username": "sqluser",
+            "password": "password"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "myFIrstConnection",
+            "database": "regInfo",
+            "username": "admin",
+            "password": "omkar@garate2002"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "connect",
+            "database": "reg",
+            "username": "sqluser",
+            "password": "password"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "database": "myshop",
+            "name": "myFirstConnection",
+            "username": "sqluser",
+            "password": "password"
+        }
+    ]
+}
