@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'KENOKY';
+    font-style: normal;
+    font-weight: 300;
+    src: local('KENOKY'), url('https://fonts.cdnfonts.com/s/54846/KenokyLight-3zezL.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Konexy Personal Use';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Konexy Personal Use'), url('https://fonts.cdnfonts.com/s/67195/KonexyPersonalUse.woff') format('woff');
+}
