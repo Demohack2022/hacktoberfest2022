@@ -1,0 +1,725 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: .1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Cursor 
+======================*/
+
+.cursor {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5e0bb;
+    box-shadow: 0 0 20px #f5e0bb,0 0 60px #f5e0bb,0 0 100px #f5e0bb;
+    position: absolute;
+    z-index: 999;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    display: none;
+}
+
+.cursor::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+    background-color: #f5e0bb;
+    opacity: .3;
+}
+
+body {
+    background: #f5e0bb;
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Kenoky', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.noise {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;                           
+    height: 100vh;
+    content: "";
+    background: url(../assets/background.gif);
+    opacity: .056;
+    z-index: -20;
+}
+
+/* Header
+======================*/
+
+.logo {
+    width: 4.8rem;
+    margin: .99rem .6rem;
+}
+
+header {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Konexy Personal Use','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    z-index: 10;
+    letter-spacing: .18rem;
+}
+ 
+.header--ul {
+    position: absolute;
+    list-style-type: none;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background: url(../assets/menu.jpg);
+    background-position: center;
+    background-size: cover;
+    text-transform: uppercase;
+    overflow: hidden ;
+    transition: all ease-out .6s;
+}
+
+.header--ul .line {
+    width: 100vw;
+    height: 1px;
+    background-color: #f5e0bb;
+    transform-origin: left;
+}
+
+.header--ul .link--number {
+    font-family: 'Koneky', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.header--ul li {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.header--ul li a {
+    font-size: 1.18rem;
+    text-decoration: none;
+    color: #f5e0bb;
+}
+
+.toggle {
+    position: absolute;
+    font-size: 1rem;
+    align-items: center;
+    top: 0;
+    right: 0;
+    padding: 1.3rem 1rem;
+}
+
+.close {
+    color: #ffffff;
+}
+
+.socials {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.social--links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social--links li {
+    list-style-type: none;
+}
+
+.social--links li a {
+    color: #f5e0bb;
+    font-size: 1.36rem;
+    text-decoration: none;
+}
+
+.socials--name {
+    font-size: .6rem;
+    font-family: Kenoky, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    display: none;
+}
+
+/* Introduction 
+================================*/
+
+.introduction {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.name {
+    margin-bottom: 6rem;
+    font-size: 1.36rem;
+    font-family: Kenoky, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: .3rem;
+}
+
+.nametyping {
+    position: relative;
+    margin-left: .63rem;
+}
+
+.nametyping::after {
+    content: "";
+    position: absolute;
+    width: .063rem;
+    height: 1.3em;
+    border-right: .13rem solid #1b1b1b;
+    animation: blink 0.45s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.introduction h1 {
+    position: absolute;
+    font-size: 4.6rem;
+    font-family: Kenoky, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: .3;
+    letter-spacing: .3rem;
+} 
+
+.introduction h2 {
+    position: absolute;
+    font-size: .9rem;
+    font-family: Kenoky, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: .3rem;
+    padding-top: 1.36rem;
+}
+
+.home--about {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: max-content;
+    z-index: 10;
+}
+
+.scroll {
+    position: absolute;
+    display: flex;
+    bottom: 5.6rem;
+    left: -1rem; 
+    font-size: .65rem;
+    transform: rotate(-90deg); 
+    font-family: 'Konexy Personal Use','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.scroll--down {
+    position: absolute;
+    transform: rotate(-90deg);
+    bottom: .9rem;
+    color: #1b1b1b;
+    font-size: 1.5rem;
+    text-decoration: none;
+    left: .99rem; 
+    animation: scrollDown 1s infinite alternate-reverse;
+}
+
+@keyframes scrollDown {
+    from{
+        transform: translateY(-.5rem);
+    }
+
+    to{
+        transform: translateY(0rem);
+    }
+}
+
+/* About 
+=====================================*/
+
+#about {
+    background: #f5e0bb;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    font-family: Kenoky, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top: 1px solid #1b1b1b;
+}
+
+.about--size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about--content {
+    margin: 3rem;
+    padding: 1rem;
+}
+
+.about--text {
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    color: #1b1b1b;
+    display: block;
+}
+
+.about--num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    font-size: 2rem;
+    color: #0000006b;
+    letter-spacing: .1rem;
+}
+
+.about--line {
+    width: 100%;
+    height: 5px;
+    background-color: #1b1b1b;
+    display: block;
+    margin-top: 1rem;
+}
+
+
+.resume {
+    position: absolute;
+    background-color: #1b1b1b;
+    color: #f5e0bb;
+    text-decoration: none;
+    padding: .3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Konexy Personal Use','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.my--image {
+    width: 13.6rem;
+    box-shadow: 0 0 20px #1b1b1b6b, 0 0 40px #1b1b1b6b;
+    margin-top: -1rem;
+}
+
+/* Projects
+============================*/
+
+#projects {
+    position: relative;
+    background: #f5e0bb;
+    width: 100vw;
+    height: 100vh;
+    font-family: Kenoky, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 10;
+    border-top: 1px solid #1b1b1b;
+}
+
+.project--size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project--num {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    font-size: 2rem;
+    color: #0000006b;
+    letter-spacing: .1rem;
+}
+
+/* Contact
+=============================*/
+
+#contact {
+    position: relative;
+    background: #f5e0bb;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Kenoky', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 9;
+    border-top: 1px solid #1b1b1b;
+}
+
+.contact--size {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact--content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    bottom: -9rem;
+}
+
+blockquote {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    font-size: 1rem;
+    margin: 3rem;
+    padding: 1rem;
+}
+
+blockquote span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: .8rem;
+    margin-right: 1rem;
+}
+
+.contacts--links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.contacts--links a {
+    color: #1b1b1b;
+    font-size: 1.36rem;
+}
+.contact--num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    font-size: 2rem;
+    color: #0000006b;
+    letter-spacing: .1rem;
+}
+
+.contact--name {
+    display: none;
+}
+
+form {
+    width: 66%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 0 40px #1b1b1b6b, 0 0 60px #1b1b1b6b;
+    letter-spacing: .1rem;
+}
+
+label {
+    display: block;
+    margin: .3rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: .5rem;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #f5e0bb;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 1px solid #1b1b1b;
+    letter-spacing: .1rem;
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #1b1b1b;
+}
+
+.contact--submit {
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 90%;
+    margin-top: 1rem;
+    color: #ffffff;
+    background: #1b1b1b;
+    cursor: pointer;
+    border-radius: 3px;
+    letter-spacing: .1rem;
+}
+
+footer {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 2rem;
+    color: #f5e0bb;
+    background-color: #1b1b1b;
+    padding: .6rem;
+    letter-spacing: .2rem;
+}
+
+
+@media screen and (min-width: 640px) {
+    .logo {
+        margin: 1.3rem 1rem;
+    }
+
+    .header--ul {
+        background: #1b1b1b;
+    }
+
+    .header--ul li a {
+        font-size: 1.9rem;
+    }
+
+    .socials--name {
+        font-size: 1.18rem;
+        display: inline;
+    }
+
+    .toggle {
+        padding: 1.9rem;
+    }
+
+    .name {
+        font-size: 3rem;
+        margin-bottom: 13.6rem;
+    }
+
+    /* Introduction 
+    ================================*/
+
+    .introduction h1 {
+        font-size: 9.6rem;
+    }
+
+    .introduction h2 {
+        font-size: 2.3rem;
+        letter-spacing: .6rem;
+    }
+
+    .resume {
+        margin: 2rem;
+    }
+
+    .scroll {
+        bottom: 6.99rem;
+        left: -1rem;
+        letter-spacing: .1rem;
+    }
+
+    .scroll--down {
+        bottom: 1.9rem;
+        left: 1.53rem;
+    }
+
+    /* About 
+    =====================================*/
+
+    .about--content {
+        padding: 2rem;
+        width: 80%;
+    }
+
+    .about--text {
+        font-size: 1.36rem;
+        line-height: 1.18;
+    }
+
+    .about--num {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+
+    .my--image {
+        width: 23rem;
+        margin-top: 3rem;
+    }
+
+    /* Projects
+    ============================*/
+
+    .project--num {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+
+    /* Contact
+    =============================*/
+
+    .contact--content {
+        width: 90%;
+        bottom: -10rem;
+        padding-bottom: 1rem;
+    }
+
+    .contact--num {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+
+    form {
+        padding: 3rem;
+        margin-top: 9rem; 
+        height: 40rem;  
+    }
+
+    label {
+        margin: 3rem 0rem;
+    }
+
+    blockquote {
+        width: 90%;
+        font-size: 2rem;
+        margin-top: 3rem;
+        padding: 2rem;
+    }
+    
+    blockquote span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    /* Introduction 
+    ================================*/
+
+    .introduction h2 {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+    }
+
+    /* About 
+    =====================================*/
+
+    #about {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }    
+
+    .about--left {
+        width: 90%;
+        border-right: 1px solid #1b1b1b;
+    }
+    
+    .about--right {
+        width: 80%;
+    }
+
+    .about--text {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .my--image {
+        width: 20rem;
+    }
+
+    /* Projects
+    ============================*/
+
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }    
+
+    .project--left {
+        width: 80%;
+        border-right: 1px solid #1b1b1b;
+    }
+    
+    .project--right {
+        width: 90%;
+    } 
+
+    /* Contact
+    =============================*/
+
+    #contact {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }    
+
+    .contact--content {
+        bottom: 15rem;
+    }
+
+    .contact--left {
+        width: 90%;
+        border-right: 1px solid #1b1b1b;
+    }
+    
+    .contact--right {
+        width: 80%;
+    } 
+
+    form {
+        margin-top: 3rem; 
+        width: 60%;
+        height: max-content;  
+    }
+
+    label {
+        margin: .5rem;
+    }
+
+    .contacts--links li {
+        margin-left: 5rem;
+    }
+    
+}
