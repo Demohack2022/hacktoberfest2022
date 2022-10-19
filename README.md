@@ -37,7 +37,7 @@ git clone (URL)
 ```
 - Navigate to project directory.
 ```terminal
-cd Hacktoberfest2022
+cd hacktoberfest2022
 ```
 
 ```terminal
