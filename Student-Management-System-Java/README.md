@@ -6,11 +6,11 @@
 
 # Preview
 
-![alt text](Student-Management-System-Java/Preview/login.png)
-![alt text](Student-Management-System-Java/Preview/login2.png)
-![alt text](Student-Management-System-Java/Preview/addStudent.png)
-![alt text](Student-Management-System-Java/Preview/Update_Delete_StudentData.png)
-![alt text](Student-Management-System-Java/Preview/showStudent.png)
-![alt text](Student-Management-System-Java/Preview/addAdmin.png)
-![alt text](Student-Management-System-Java/Preview/UpdateDeleteAdmin.png)
-![alt text](Student-Management-System-Java/Preview/showAdmin.png)
+![alt text](Preview/login.png)
+![alt text](Preview/login2.png)
+![alt text](Preview/addStudent.png)
+![alt text](Preview/Update_Delete_StudentData.png)
+![alt text](Preview/showStudent.png)
+![alt text](Preview/addAdmin.png)
+![alt text](Preview/UpdateDeleteAdmin.png)
+![alt text](Preview/showAdmin.png)
