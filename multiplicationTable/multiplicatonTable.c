@@ -4,7 +4,7 @@ int main()
 {
     int number = 1;
     int result, table;
-    printf("Which multiplication table would you like to see:\n");
+    printf("Which Multiplication Table would you like to see ?:\n");
     scanf("%d", &table);
     printf("Here is the table of %d:", table);
     do
